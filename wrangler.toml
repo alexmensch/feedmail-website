@@ -9,3 +9,6 @@ not_found_handling = "404-page"
 [[routes]]
 pattern = "feedmail.cc/*"
 zone_name = "feedmail.cc"
+
+[observability.logs]
+enabled = true
