@@ -1,0 +1,12 @@
+{
+  "name": "feedmail-website",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.4"
+  },
+  "packageManager": "pnpm@10.30.2"
+}
