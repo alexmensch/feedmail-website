@@ -1,0 +1,258 @@
+---
+layout: layouts/base.liquid
+---
+
+<header class="site-header">
+  <div class="wrapper">
+    <a href="/" class="site-header__wordmark">feedmail</a>
+    <a href="{{ site.github }}" class="site-header__github">
+      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      GitHub
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrapper">
+    <h1 class="hero__headline">Turn RSS feeds into email newsletters</h1>
+    <p class="hero__subheadline">
+      An open-source microservice that monitors your feeds and delivers new
+      posts to subscribers automatically. Privacy-first, zero tracking, runs on
+      Cloudflare's edge.
+    </p>
+    <div class="hero__ctas">
+      <a href="{{ site.github }}" class="btn btn--primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        View on GitHub
+      </a>
+      <a href="#waitlist" class="btn btn--secondary">Join the waitlist</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrapper">
+    <div class="section-header">
+      <h2 class="section-header__title">Built for simplicity and privacy</h2>
+      <p class="section-header__desc">
+        Everything you need to run an email newsletter from your site's RSS
+        feed. Nothing you don't.
+      </p>
+    </div>
+    <div class="grid grid--3">
+      <div class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">&#128274;</div>
+        <h3 class="feature-card__title">Privacy by default</h3>
+        <p class="feature-card__desc">
+          No open tracking, no click tracking, no analytics. Your subscribers'
+          privacy is respected from day one.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">&#9989;</div>
+        <h3 class="feature-card__title">Double opt-in</h3>
+        <p class="feature-card__desc">
+          Email verification with rate limiting and 24-hour token expiry.
+          One-click unsubscribe via RFC 8058 headers.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">&#127760;</div>
+        <h3 class="feature-card__title">Multi-site support</h3>
+        <p class="feature-card__desc">
+          Run newsletters for multiple sites from a single deployment, each
+          with its own subscriber list and feeds.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">&#127912;</div>
+        <h3 class="feature-card__title">Customizable templates</h3>
+        <p class="feature-card__desc">
+          Handlebars templates for emails and confirmation pages. Match your
+          brand without fighting a platform.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">&#9889;</div>
+        <h3 class="feature-card__title">Edge-powered</h3>
+        <p class="feature-card__desc">
+          Runs entirely on Cloudflare Workers and D1. No servers to maintain,
+          no infrastructure to scale.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon" aria-hidden="true">&#128193;</div>
+        <h3 class="feature-card__title">Open source</h3>
+        <p class="feature-card__desc">
+          AGPL-3.0 licensed. Inspect the code, contribute improvements, or
+          fork it for your own needs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+    <div class="section-header">
+      <h2 class="section-header__title">How it works</h2>
+      <p class="section-header__desc">
+        Three steps to go from RSS feed to subscriber inboxes.
+      </p>
+    </div>
+    <div class="steps stack" style="max-width: var(--content-width); margin-inline: auto; --flow-space: var(--space-l);">
+      <div class="step">
+        <div class="step__content">
+          <p class="step__title">Point it at your feeds</p>
+          <p class="step__desc">
+            Configure your RSS or Atom feed URLs. feedmail supports multiple
+            feeds per site, so you can combine a blog, podcast, and changelog
+            into one newsletter.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__content">
+          <p class="step__title">Add a subscribe form to your site</p>
+          <p class="step__desc">
+            Drop a simple HTML form onto any page. feedmail handles
+            verification emails, rate limiting, and bot protection
+            automatically.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__content">
+          <p class="step__title">New posts get delivered automatically</p>
+          <p class="step__desc">
+            feedmail checks your feeds on a schedule. When new items appear,
+            it sends them to all verified subscribers. No manual work
+            required.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="waitlist" class="section section--alt">
+  <div class="wrapper">
+    <div class="section-header">
+      <h2 class="section-header__title">Choose your path</h2>
+      <p class="section-header__desc">
+        Self-host for full control, or let us handle the infrastructure.
+      </p>
+    </div>
+    <div class="grid grid--2">
+      <div class="path-card">
+        <h3 class="path-card__title">Self-Host</h3>
+        <p class="path-card__desc">
+          Deploy feedmail on your own Cloudflare account. Full control over
+          your data and configuration.
+        </p>
+        <ul class="path-card__features">
+          <li>Free and open source</li>
+          <li>Your infrastructure, your data</li>
+          <li>Unlimited sites and subscribers</li>
+          <li>Full template customization</li>
+          <li>Community support via GitHub</li>
+        </ul>
+        <a href="{{ site.github }}" class="btn btn--secondary">
+          Get started on GitHub
+        </a>
+      </div>
+      <div class="path-card path-card--hosted">
+        <span class="path-card__badge">Coming soon</span>
+        <h3 class="path-card__title">Hosted</h3>
+        <p class="path-card__desc">
+          We run feedmail for you. Create an account, set up your feeds,
+          and start sending. No infrastructure to manage.
+        </p>
+        <ul class="path-card__features">
+          <li>No Cloudflare account needed</li>
+          <li>Set up in minutes, not hours</li>
+          <li>Managed updates and maintenance</li>
+          <li>Same privacy-first approach</li>
+          <li>Dashboard for managing subscribers</li>
+        </ul>
+        <form id="waitlist-form" class="waitlist-form"
+          data-api-url="{{ site.feedmail.apiUrl }}"
+          data-site-id="{{ site.feedmail.siteId }}">
+          <input
+            type="email"
+            name="email"
+            class="waitlist-form__input"
+            placeholder="you@example.com"
+            required
+            aria-label="Email address"
+          />
+          <input
+            type="text"
+            name="website"
+            class="waitlist-form__honeypot"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <button type="submit" class="btn btn--primary">Join the waitlist</button>
+          <p id="waitlist-message" class="waitlist-form__message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <p>&copy; {{ "now" | date: "%Y" }} feedmail</p>
+    <ul class="site-footer__links">
+      <li><a href="{{ site.github }}">GitHub</a></li>
+      <li><a href="{{ site.github }}/blob/master/LICENSE">AGPL-3.0</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('waitlist-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const msg = document.getElementById('waitlist-message');
+    const btn = form.querySelector('button[type="submit"]');
+
+    // Honeypot check
+    if (form.website.value) {
+      msg.className = 'waitlist-form__message waitlist-form__message--success';
+      msg.textContent = 'Thanks! Check your email to confirm.';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting\u2026';
+
+    try {
+      const response = await fetch(form.dataset.apiUrl + '/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: form.email.value,
+          siteId: form.dataset.siteId,
+        }),
+      });
+
+      const data = await response.json();
+      msg.className = 'waitlist-form__message waitlist-form__message--success';
+      msg.textContent = data.message || 'Thanks! Check your email to confirm.';
+      form.email.value = '';
+    } catch {
+      msg.className = 'waitlist-form__message waitlist-form__message--error';
+      msg.textContent = 'Something went wrong. Please try again.';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Join the waitlist';
+    }
+  });
+</script>

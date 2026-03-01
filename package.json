@@ -1,9 +1,16 @@
 {
   "name": "feedmail-website",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "deploy": "pnpm run build && npx wrangler deploy",
+    "clean": "rm -rf _site"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "sass": "^1.97.3"
   },
   "devDependencies": {
     "wrangler": "^4.14.4"
